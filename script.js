@@ -1,13 +1,10 @@
 function getFormvalue() {
-    //Write your code here
-	const form = document.getElementById('form1');
+  const form = document.getElementById('form1');
 
-	const firtName = form.elements['fname'].value.trim();
-	const lastName = form.elements['lname'].value.trim();
+  let firstName = form.elements['fname'].value.trim();
+  let lastName = form.elements['lname'].value.trim();
 
-	alert(`${firstName} ${lastName}`);
+  alert(`${firstName} ${lastName}`);
 
-	return false;
-	
-
+  return false; // Prevents form from refreshing the page
 }
